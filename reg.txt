@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>CareerAffix-Registration Page</title>
+    </head>
+    <body>
+
+
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo.png" alt="logo image">Career <span style="color:#1980e6 ; margin-left: -5px;">Affix</span> 
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__items">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+
+                        <li class="nav__items">
+                            <a href="about.html" class="nav__link ">About</a>
+                        </li>
+
+                        <li class="nav__items">
+                            <a href="event.html" class="nav__link ">Event</a>
+                        </li>
+
+                        <li class="nav__items">
+                            <a href="registration.html" class="nav__link active-link">Register</a>
+                        </li>
+                    </ul>
+
+                    <!--Close Button-->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+
+                </div>
+
+                <!--Toggle Button-->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-apps-2-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+
+            <!--==================== PRICE ====================-->
+            <section class="offer section">
+                <div class="offer__container container grid">
+
+                    <div class="offer__data-1">
+                        <h2 class="section__title offer__title-1" style="color: rgb(0, 0, 0);">
+                            CareerAffix
+                        </h2>
+                        <h2 class="section__title offer__title-1" style="color: rgb(0, 0, 0);">
+                            Career Assintence Program
+                        </h2>
+
+                        
+                    </div>
+                    <img src="assets/img/price.png" alt="" class="offer__img">
+                </div>
+            </section>
+
+
+            <div class="reg">
+                <div class="container-reg">
+                    <div class="title">Webinar Registration Form</div>
+                    <form action="payscript.php" method="POST" name="google-sheet">
+                        
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">First Name</span>
+                                <input type="text" name="First Name" placeholder="Enter your First name" required>
+                            </div>
+                
+                            <div class="input-box">
+                                <span class="details">Last Name</span>
+                                <input type="text" name="Last Name" placeholder="Enter your Last name" required>
+                            </div>
+                
+                            <div class="input-box">
+                                <span class="details">Email id</span>
+                                <input type="text" name="Email id" placeholder="youremail@gmail.com" required>
+                            </div>
+
+                            <div class="input-box">
+                                <span class="details">Date of Birth</span>
+                                <input type="text" name="DOB" placeholder="09-04-2023" required>
+                            </div>
+                
+                            <div class="input-box">
+                                <span class="details">Contact Number</span>
+                                <input type="text" name="Contact Number" placeholder="Enter your Contact Number" required>
+                            </div>
+
+                            <div class="input-box">
+                                <span class="details">WhatsApp Number</span>
+                                <input type="text" name="WhatsApp Number" placeholder="Enter your Contact Number" required>
+                            </div>
+                
+                            <div class="input-box">
+                                <span class="details">City</span>
+                                <input type="text" name="City" placeholder="Enter your City" required>
+                            </div>
+                
+                            <div class="input-box">
+                                <span class="details">State</span>
+                                <input type="text" name="State" placeholder="Enter your State" required>
+                            </div>
+                
+                            
+                        </div>
+                
+                
+                        <div  class="button-reg">
+                                <input  type="submit" class="submit" value="Register" name="submit"> 
+                        </div>
+                
+                    </form>
+                </div>
+            </div>
+            
+
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycby08RbOIEMN9KNS7SX3LFUq7zjQWDCWVXWTwO6p1a8zps22DvbpnZAzck-Ri88R_l4z/exec'
+                const form = document.forms['google-sheet']
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => alert("Thanks for Registration. You wii get a Conformation Mail Shortly"))
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
+
+
+
+
+            <section class="celebrate section" id="celebrate">
+                <div class="celebrate__container container grid">
+                    <div class="celebrate__data">
+                        <h2 class="section__title">
+                            Contact Us
+                        </h2>
+
+                        <p class="celebrate__description">
+                            
+                            <div>
+                                Email Us On
+                                
+                                <p><i class="ri-mail-fill"></i> &nbsp;
+                                    <a href="mailto:info@gmail.com" style="color: #000;">abcd@gmail.com</a></p>
+                              </div><br><br>
+                              Call Us On
+                
+                              <div>
+                                
+                                <p><i class="ri-phone-fill"></i> &nbsp;
+                                    <a href="tel:+91 12345 67890" style="color:#000">+91 1234567890</a></p>
+                              </div> <br><br>
+                              Address
+
+                              <div>
+                                
+                                <p><i class="ri-home-fill"></i> &nbsp;
+                                    abcd efgh ijklmn opqrtsjf dkvj</p>
+                              </div>
+                        </p>
+
+                    </div>
+                    <img src="assets/img/contact.png" alt="celebrate image" class="celebrate__img">
+                    
+                </div>
+            </section>
+
+        </main>
+
+
+
+
+
+
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer section" style="background-color: rgb(0, 0, 0); border-radius:20px 20px 0 0; color: #fff; ">
+            
+    <div class="shape shape__big"></div>
+    <div class="shape shape__small"></div>                
+    
+    <div class="footer__container container grid">
+        <div class="footer__content">
+            <a href="#" class="footer__logo">
+                <img src="./assets/img/logo.png" alt="" style="width: 100px;">
+                 CareerAffix
+            </a>
+            <p class="footer__description">
+                It is a placement consulting and <br>
+                preparation company, aiming to help <br>
+                students and working professionals <br>
+                find the right solution for their <br>
+                careers.
+            </p>
+        </div>
+
+        <div class="footer__content">
+            <h3 class="footer__title">
+                Company
+            </h3>
+            <ul class="footer__link">
+                <li>
+                    <a href="about.html" class="footer__link">About</a>
+                </li>
+
+                <li>
+                    <a href="event.html" class="footer__link">Event</a>
+                </li>
+
+                <li>
+                    <a href="registration.html" class="footer__link">Register</a>
+                </li>
+
+                <li>
+                    <a href="event_form.html" class="footer__link">Webinar Registration</a>
+                </li>
+                
+            </ul>
+        </div>
+
+        <div class="footer__content">
+            <h3 class="footer__title">
+                Information
+            </h3>
+            <ul class="footer__link">
+
+                <li>
+                    <a href="#send" class="footer__link">Payment</a>
+                </li>
+
+                <li>
+                    <a href="#send" class="footer__link">Services</a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="footer__link">Contact us</a>
+                </li>
+                <br>
+
+                <li>
+                    <a href="terms&condition.html" class="footer__link">Terms & Condition</a>
+                </li>
+
+                <li>
+                    <a href="privecy.html" class="footer__link">Privacy Policy</a>
+                </li>
+
+                
+
+               
+
+            </ul>
+        </div>
+
+        <div class="footer__content">
+            <h3 class="footer__title">
+                Follow us
+            </h3>
+            <ul class="footer__social">
+                <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                    <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                    <i class="ri-twitter-line"></i>
+                </a>
+            </ul>
+        </div>
+
+    </div>
+    <span class="footer__copy">
+        &#169; CareerAffix. All rigths reserved 2023
+    </span>
+</footer>
+
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--=============== RELLAX JS ===============-->
+        <script src="assets/js/rellax.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== GSAP ===============-->
+        <script src="assets/js/gsap.min.js"></script>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
