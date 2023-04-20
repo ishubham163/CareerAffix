@@ -18,7 +18,6 @@ $price = $_POST['price'];
 $Name = $_POST['Name'];
 $Email = $_POST['Email'];
 $Contact = $_POST['Contact'];
-$State = $_POST['State'];
 $orderData = [
     'receipt'         => 3456,
     'amount'          => $price * 100, // 2000 rupees in paise
@@ -51,7 +50,6 @@ $data = [
         "name"              => $Name,
         "email"             => $Email,
         "contact"           => $Contact,
-        "state"             => $State,
     ],
     "notes"             => [
         "address"           => "Hello World",

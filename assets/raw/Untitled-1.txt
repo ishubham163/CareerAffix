@@ -1,0 +1,111 @@
+
+
+                    <div class="send__card">
+                        <img src="assets/img/s-4.png" alt="send image" class="send__img">
+
+                        <h3 class="send__title">Hr Rond Prepration</h3>
+                        <p class="send__description">
+                            We will prepare you to crack the HR interview round by providing live interactive classes with experienced HR.
+                        </p>
+                    </div>
+
+
+                    <div class="send__card">
+                        <img src="assets/img/s-5.png" alt="send image" class="send__img">
+
+                        <h3 class="send__title">GD Prepration</h3>
+                        <p class="send__description">
+                            Our expert will prepare you how to crack the group discussion round.
+                        </p>
+                    </div>
+
+
+                    <div class="send__card">
+                        <img src="assets/img/s-6.png" alt="send image" class="send__img">
+
+                        <h3 class="send__title">Tech/Non-tech interview Prepration</h3>
+                        <p class="send__description">
+                            We will Prepare you to crack technical interview rounds by providing the live session with industrial expert.
+                        </p>
+                    </div>
+
+                    <div class="send__card">
+                        <img src="assets/img/s-7.png" alt="send image" class="send__img">
+
+                        <h3 class="send__title">2 Mock interview</h3>
+                        <p class="send__description">
+                            A mock interview will help you work on yourself and gain confidence.
+                        </p>
+                    </div>
+
+
+                    <div class="send__card">
+                        <img src="assets/img/s-8.png" alt="send image" class="send__img">
+
+                        <h3 class="send__title">Personlity Devlopment</h3>
+                        <p class="send__description">
+                            We will develop your attitude, confidence, gesture, and posture by providing live classes with skill development experts.
+                        </p>
+                    </div>
+
+
+                    <div class="send__card">
+                        <img src="assets/img/s-9.png" alt="send image" class="send__img">
+
+                        <h3 class="send__title">Job Site Profile Creation</h3>
+                        <p class="send__description">
+                            We will hepls to creat job profile like linkdin, naukri.com, Hirist job etc to apply for dream jobs.
+                        </p>
+                    </div>
+
+                    <div class="send__card">
+                        <img src="assets/img/s-10.png" alt="send image" class="send__img">
+
+                        <h3 class="send__title">Live Class</h3>
+                        <p class="send__description">
+                            You will get a live introduction by the experienced industrial expert for better understanding.
+                        </p>
+                    </div>
+
+                    <div class="send__card">
+                        <img src="assets/img/s-11.png" alt="send image" class="send__img">
+
+                        <h3 class="send__title">Study Materials</h3>
+                        <p class="send__description">
+                            You can obtain digital notes as well as a live classroom recording for review and reference.
+                        </p>
+                    </div>
+
+                    <div class="send__card">
+                        <img src="assets/img/s-12.png" alt="send image" class="send__img">
+
+                        <h3 class="send__title">Doubt Clearing Support</h3>
+                        <p class="send__description">
+                            You will get a doubt Clearing Class in which you can clear your doubt.
+                        </p>
+                    </div>
+
+                    <div class="send__card">
+                        <img src="assets/img/s-13.png" alt="send image" class="send__img">
+
+                        <h3 class="send__title">3 Scheduled Interview</h3>
+                        <p class="send__description">
+                            From Our side three interviews will be scheduled in the MNC's.
+                        </p>
+                    </div>
+
+                    <div class="send__card">
+                        <img src="assets/img/s-14.png" alt="send image" class="send__img">
+
+                        <h3 class="send__title">Certificate</h3>
+                        <p class="send__description">
+                            You will get certificates like the LOR (Letter of Recommendation) and SOP (Statement of Purpose) for the furtherance of your career.
+                        </p>
+                    </div>
+
+
+
+
+
+
+                     Our mission is to help students and working professionals get their dream job or kick-start their career. CareerAffix makes the process of finding the right solution easier and more efficient.

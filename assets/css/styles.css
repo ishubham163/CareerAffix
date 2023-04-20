@@ -255,6 +255,10 @@ img {
   position: relative;
   row-gap: 3.5rem;
 }
+.about__container1{
+  position: relative;
+  row-gap: 3.5rem;
+}
 
 .about__data{
   text-align: center;
@@ -361,21 +365,32 @@ img {
   box-shadow: 0 8px 32px hsl(210, 80%, 54%, .7);
 }
 
+.enroll-now{
+  color: #1196d4;
+  border: 2px solid #1980e6;
+  border-radius: 20px;
+  padding: 6px;
+}
+
 /*=============== SEND ===============*/
 .send__container{
+  grid-template-columns: repeat(2, 150px);
   position: relative;
-  grid-template-columns: 200px;
   justify-content: center;
   row-gap: 3rem;
   padding-top: 1.5rem;
 }
 
 .send__card{
+  border: 1px solid #1980e6;
+  padding: 2px;
+  border-radius: 20px;
   text-align: center;
+  padding-top: 25px;
 }
 
 .send__img{
-  width: 180px;
+  width: 100px;
   margin-bottom: .75rem;
 }
 
@@ -416,8 +431,8 @@ img {
 }
 
 .send__container1{
+  grid-template-columns: repeat(2, 150px);
   position: relative;
-  grid-template-columns: 200px;
   justify-content: center;
   row-gap: 3rem;
   padding-top: 1.5rem;
@@ -473,9 +488,9 @@ img {
 
 .popular__card{
   position: relative;
-  width: 238px;
-  height: 430px;
-  background-color: rgba(0,0,0,.15);
+  width: 240px;
+  height: 480px;
+  background-color: #141414;
   padding: 2rem 1.5rem 1.5rem;
   border-radius: 1rem;
   margin-bottom: 3.5rem;
@@ -497,7 +512,8 @@ img {
 
 
 .popular__title{
-  font-size: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
   margin-bottom: .25rem;
 }
 
@@ -517,7 +533,7 @@ img {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   gap: .5rem 1.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .popular__data-group{
@@ -529,11 +545,15 @@ img {
 }
 
 .popular__data i{
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .popular__price{
   font-size: 1rem;
+}
+.tprice{
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .popular__button{
@@ -611,7 +631,6 @@ img {
   bottom: 2rem;
 }
 .offer__img-2{
-
   max-width: initial;
   width: 330px;
   bottom: 2rem;
@@ -681,6 +700,7 @@ img {
 
 
   .about__container,
+  .about__container1,
   .celebrate__container{
     grid-template-columns: .6fr;
     justify-content: center;
@@ -737,8 +757,8 @@ img {
     bottom: 20rem;
   }
   .send__container{
-    grid-template-columns: repeat(2, 200px);
-    column-gap: 5rem;
+    grid-template-columns: repeat(3, 195px);
+    column-gap: 4rem;
   }
   .send__snow-2{
     left: 42rem;
@@ -771,6 +791,11 @@ img {
     align-items: center;
     column-gap: 6rem;
   }
+  .about__container1{
+    grid-template-columns: 450px 600px;
+    align-items: center;
+    column-gap: 4rem;
+  }
   .about__data,
   .about__data .section__title{
     text-align: initial;
@@ -788,13 +813,13 @@ img {
     bottom: 3.5rem;
   }
   .send__container{
-    grid-template-columns: repeat(3, 220px);
-    column-gap: 7.5rem;
+    grid-template-columns: repeat(5, 160px);
+    column-gap: 3.5rem;
     padding-top: 3rem;
   }
   .send__container1{
-    grid-template-columns: repeat(2, 220px);
-    column-gap: 7.5rem;
+    grid-template-columns: repeat(6, 120px);
+    column-gap: 3.5rem;
     padding-top: 3rem;
   }
   .send__img{
@@ -1099,7 +1124,6 @@ img {
 }
 .testimonial {
   position: relative;
-  max-width: 900px;
   width: 100%;
   padding: 50px 0;
   overflow: hidden;
@@ -1253,6 +1277,19 @@ img {
             font-size: 16px;
             border-bottom-width: 2px;
         }
+        
+        .container-reg .user-details .input-box input{
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+            border-bottom-width: 2px;
+        }
+
+
         .container-reg .user-details .input-box input:focus,
         .container-reg .user-details .input-box input:valid{
             border-color: hsl(210, 80%, 54%, .7);
@@ -1274,6 +1311,7 @@ img {
           letter-spacing: 1px;
           border-radius: 5px;
       }
+
       form .button-reg input:hover{
           background: #075478;
       }
@@ -1356,8 +1394,20 @@ img {
             font-size: 16px;
             border-bottom-width: 2px;
         }
+        .container-reg-1 .user-details .input-box select{
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+            border-bottom-width: 2px;
+        }
         .container-reg-1 .user-details .input-box input:focus,
-        .container-reg-1 .user-details .input-box input:valid{
+        .container-reg-1 .user-details .input-box input:valid
+        .container-reg-1 .user-details .input-box select:focus,
+        .container-reg-1 .user-details .input-box select:valid{
             border-color: hsl(210, 80%, 54%, .7);
         }
 
@@ -1377,6 +1427,7 @@ img {
           letter-spacing: 1px;
           border-radius: 5px;
       }
+
       form .button-reg-1 input:hover{
           background: #075478;
       }

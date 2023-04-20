@@ -38,6 +38,10 @@
                         </li>
 
                         <li class="nav__items">
+                            <a href="courses.html" class="nav__link">Course</a>
+                        </li>
+
+                        <li class="nav__items">
                             <a href="event.html" class="nav__link ">Event</a>
                         </li>
 
@@ -65,7 +69,7 @@
             <!--==================== PRICE ====================-->
 
 
-            <section class="about section" id="about">
+            <section class="about section" style="margin-top: 50px;">
                 <div class="about__container container grid">
                     <div class="home__data">
                         <div class="celebrate__data">
@@ -73,25 +77,31 @@
                                 CareerAffix
                             </h2>
                             <h2 class="section__title" style="font-size: 30px; color:#fff">
-                                Career Assintence Program
+                                Our Courses
                             </h2>
-                            <h3>In This you will get.</h3><br>
                             <p>
-                                Career Audit | Resume Buildup | Amplitude Test Prepration | Hr Round Prepration | 
-                                GD (group discussion) Prepration | Technical Interview Prepration | Mock Interview | 
-                                Personlity Devlopment | Job Site Profile Creation | Live Class | Study Materials | 
-                                Certificate
+                                Web Development  &nbsp;&nbsp;|&nbsp; &nbsp; App Development  &nbsp;&nbsp;| &nbsp;&nbsp; 
+                                Data Science&nbsp;&nbsp;  |&nbsp;&nbsp;  AI & ML&nbsp;&nbsp;  |&nbsp;&nbsp;  Degital Marketing &nbsp;&nbsp; |  
+                                &nbsp;&nbsp; Sales and Marketing &nbsp;&nbsp; | &nbsp;&nbsp; Finance  &nbsp;&nbsp;|&nbsp;&nbsp;  HR&nbsp;&nbsp;
+                                | &nbsp;&nbsp; Social Media Masteri &nbsp;&nbsp; |&nbsp;&nbsp;  Stock Marketing &nbsp;&nbsp; | &nbsp;&nbsp; 
+                                Communication
+                                
                             </p>
                             <br>
                             <h4>Duration: 3 Month</h4>
                             <br>
-                            <h4>Price: Rs 2,999 (Limited Time OFFER)</h4>
+                            <h4>Price: Rs 5,999 (50% OFFER)</h4>
+                            <h4>Offer Price: Rs 2,999 + 18% GST</h4>
+                            <h4>Totla Price: Rs 3,540 (Limited Time OFFER)</h4>
                             <br>
-                            <h4>
-                                After completing this course, you will be placement-ready, and our experts will guide you in your career.
-                            </h4>
                             <br>
                             <p>You will get a Course Complition Certificate. After successful completing the course.</p>
+                            <br><br>
+                            <p>&#9673; Affiliate marketing opportunity (free and optional)</p><br>
+                            <p>&#9673; There is no limitation to earning</p><br>
+                            <p>&#9673; Your earnings will be distributed on a weekly basis.</p><br>
+                            <p>&#9673; You will get free training to develop your business.</p><br>
+                            <p>&#9673; All of our users are eligible for this opportunity.</p><br>
 
     
                         </div>
@@ -103,15 +113,35 @@
                         <div class="reg-1">
                             <div class="container-reg-1">
                                 <div class="title">Registration Form</div>
-                                <form action="pay.php" method="POST">
+                                <form action="pay.php" method="POST" >
                                     
                                     <div class="user-details">
-                                        Price : Rs 2,999 <input type="hidden" name="price" value="2999">
+                                        Price : Rs 3,540 <input type="hidden" name="price" value="3540">
+
+                                        <div class="input-box">
+                                            <span class="details">Course</span>
+                                            <select id="Course" name="Course" required>
+                                                <option value="" disabled selected hidden>Choose a Course</option>
+                                                <option value="Web Developer">Web Developer</option>
+                                                <option value="Software Devlopment">Software Devlopment</option>
+                                                <option value="Data Science">Data Science</option>
+                                                <option value="AI & ML">AI & ML</option>
+                                                <option value="Digital Marketing">Digital Marketing</option>
+                                                <option value="Sales & Marketing">Sales & Marketing</option>
+                                                <option value="Finance">Finance</option>
+                                                <option value="Human Resources">Human Resources</option>
+                                                <option value="Social Media Mastri">Social Media Mastri</option>
+                                                <option value="Stock Marketing">Stock Marketing</option>
+                                                <option value="Public Speaking">Public Speaking</option>
+                                            </select>
+                                        </div>
+
+
                                         <div class="input-box">
                                             <span class="details">Name</span>
                                             <input type="text" name="Name" placeholder="Enter your full name" required>
                                         </div>
-                            
+
                                         <div class="input-box">
                                             <span class="details">Email id</span>
                                             <input type="text" name="Email" placeholder="youremail@gmail.com" required>
@@ -127,6 +157,15 @@
                                             <span class="details">City with State</span>
                                             <input type="text" name="State" placeholder="Enter your City with State" required>
                                         </div>
+
+                                        <div class="input-box">
+                                            <span class="details">Enter Referall Code</span>
+                                            <input type="text" name="State" placeholder="Enter your City with State">
+                                        </div>
+                                        <label>
+                                            <input type="checkbox" required>
+                                            I agree to the terms and condition
+                                        </label>
                             
                                         
                                     </div>
@@ -146,6 +185,7 @@
 
                 </div>
             </section>
+
 
 
 
@@ -208,11 +248,11 @@
                  CareerAffix
             </a>
             <p class="footer__description">
-                It is a placement consulting and <br>
-                preparation company, aiming to help <br>
-                students and working professionals <br>
-                find the right solution for their <br>
-                careers.
+                CareerAffix is building the foundation for all <br>
+                learners, and we are providing the platform <br>
+                where everyone is welcome to enhance their <br>
+                skills, and we train, educate, and give them <br>
+                an opportunity to make money online.
             </p>
         </div>
 
@@ -247,11 +287,11 @@
             <ul class="footer__link">
 
                 <li>
-                    <a href="#send" class="footer__link">Payment</a>
+                    <a href="registration.html" class="footer__link">Payment</a>
                 </li>
 
                 <li>
-                    <a href="#send" class="footer__link">Services</a>
+                    <a href="courses.html" class="footer__link">Services</a>
                 </li>
 
                 <li>
@@ -319,6 +359,11 @@
         <script src="assets/js/main.js"></script>
     </body>
 </html>
+
+
+
+
+
 
 
 
