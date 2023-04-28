@@ -637,9 +637,7 @@ img {
 }
 /*=============== LOGOS ===============*/
 .logos__img{
-  width: 40px;
-  opacity: .4;
-  transition: .3s;
+  width: 80px;
 }
 
 .logos__container{
@@ -650,9 +648,6 @@ img {
   padding-bottom: 2rem;
 }
 
-.logos__img:hover{
-  opacity: 1;
-}
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
@@ -926,7 +921,7 @@ img {
   }
 
   .logos__img{
-    width: 50px;
+    width: 80px;
   }
 
 
@@ -1278,16 +1273,7 @@ img {
             border-bottom-width: 2px;
         }
         
-        .container-reg .user-details .input-box input{
-            height: 45px;
-            width: 100%;
-            outline: none;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            padding-left: 15px;
-            font-size: 16px;
-            border-bottom-width: 2px;
-        }
+
 
 
         .container-reg .user-details .input-box input:focus,

@@ -13,10 +13,13 @@
         <!--=============== REMIXICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
+        <!-- Boxicons CSS -->
+        <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"rel="stylesheet"/>
+
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>CareerAffix/Event_page</title>
+        <title>CareerAffix/ContacttUs_Page</title>
     </head>
     <body>
 
@@ -34,7 +37,7 @@
                         </li>
 
                         <li class="nav__items">
-                            <a href="about.html" class="nav__link ">About Us</a>
+                            <a href="about.html" class="nav__link active-link">About Us</a>
                         </li>
 
                         <li class="nav__items">
@@ -42,13 +45,13 @@
                         </li>
 
                         <li class="nav__items">
-                            <a href="event.html" class="nav__link active-link">Event</a>
+                            <a href="event.html" class="nav__link">Event</a>
                         </li>
 
                         <li class="nav__items">
                             <a href="contact.html" class="nav__link">Contact Us</a>
                         </li>
-
+                        
                         <li class="nav__items">
                             <a href="#" class="nav__link">Login</a>
                         </li>
@@ -68,114 +71,139 @@
             </nav>
         </header>
 
-        <main class="main">
+        <main class="main" style="background-color: #1196d4;">
+            <br><br><br>
 
 
-            <!--==================== ABOUT ====================-->
-                    <section class="celebrate section" id="celebrate" style="background-image: url(./assets/img/bg-3.png);border-radius: 0 0 160px 0"">
-                        <div class="celebrate__container container grid">
-                            <div class="celebrate__data">
-                                <h2 class="section__title offer__title" style="color: #fff; font-size: 25px;">
-                                    Free Live Webinar
-                                </h2>
-                                <h2 class="section__title offer__title" style="color: #fff; font-size: 30px;">
-                                    On Career Guidance
-                                </h2>
-                                <h2 class="section__title offer__title" style="color: rgb(176, 176, 176); font-size: 20px;">
-                                    On Every Sunday
-                                </h2>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <section class="celebrate section" id="celebrate">
+                <div class="celebrate__container container grid">
+                    <div class="celebrate__data">
+                        <h2 class="section__title">
+                            Contact Us
+                        </h2>
+
+                        <p class="celebrate__description">
+                            
+                            <div>
+                                Email Us On
                                 
-                                <p>Note:- Meating Link will be Sent to your mail one day before starting the Webinar</p><br><br>
-        
-                                <p class="celebrate__description">
-                                    Our experts are industrial experts with experience in the job market. <br>
-                                    Our experts will guide you through the new and challenging job market. 
-                                </p>
-        
-                                <a href="event_form.html" class="button">Register Now</a>
+                                <p><i class="ri-mail-fill"></i> &nbsp;
+                                    <a href="mailto:support@careeraffix.in" style="color: #000;">support@careeraffix.in</a></p>
+                              </div><br><br>
+                              Call Us On
+                
+                              <div>
+                                
+                                <p><i class="ri-phone-fill"></i> &nbsp;
+                                    <a href="tel:+91 9590539925" style="color:#000">+91 95905 39925</a></p>
+                              </div> <br><br>
+                              Address
+
+                              <div>
+                                
+                                <p><i class="ri-home-fill"></i> &nbsp;
+                                    ITI Layout Main Road, Bengaluru, Karnataka - 560068</p>
+                              </div>
+                        </p>
+
+                    </div>
+                    <img src="assets/img/contact.png" alt="celebrate image" class="celebrate__img">
+                    
+                </div>
+            </section>
+
+           
+
+
+
+
+
+
+
+            <div class="reg">
+                <div class="container-reg" style="box-shadow: 10px 5px 5px #141414ab;">
+                    <div class="title">Have Questions?</div>
+                    <form action="payscript.php" method="POST" name="google-sheet">
+                        
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Name</span>
+                                <input type="text" name="First Name" placeholder="Enter your First name" required>
                             </div>
-                            <img style="border-radius: 20px;" src="assets/img/web.png" alt="celebrate image" class="celebrate__img">
+                
+
+                            <div class="input-box">
+                                <span class="details">Email id</span>
+                                <input type="text" name="Email id" placeholder="youremail@gmail.com" required>
+                            </div>
+
+                
+                            <div class="input-box">
+                                <span class="details">Contact Number</span>
+                                <input type="text" name="Contact Number" placeholder="Enter your Contact Number" required>
+                            </div>
+
+                            <div class="input-box">
+                                <span class="details">WhatsApp Number</span>
+                                <input type="text" name="WhatsApp Number" placeholder="Enter your Contact Number" required>
+                            </div>
+                
+                            <div class="input-box" style="width: 100%;">
+                                <span class="details">Resion</span>
+                                <input type="text" name="Resion" placeholder="Enter your State" required>
+                            </div>
+                
                             
                         </div>
-                    </section>
-
+                
+                
+                        <div  class="button-reg">
+                                <input  type="submit" class="submit" value="SUBMIT" name="submit"> 
+                        </div>
+                
+                    </form>
+                </div>
+            </div>
             
 
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycby08RbOIEMN9KNS7SX3LFUq7zjQWDCWVXWTwO6p1a8zps22DvbpnZAzck-Ri88R_l4z/exec'
+                const form = document.forms['google-sheet']
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => alert("Thanks for Registration. You wii get a Conformation Mail Shortly"))
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
 
 
 
-
-            <!--==================== POPULAR ====================-->
-            <section class="popular section" id="popular">
-                <h2 class="section__title">
-                    Our Webinars
-                </h2>
-
-                <div class="popular__container container swiper">
-                    <div class="swiper-wrapper">
-
-                        <article class="popular__card swiper-slide" style="background-color: #ffffff;">
-                            <h1 class="popular__title" style="color: #000000;">Job opportunities from the global marketplace.</h1>
-                            <h3 class="popular__subtitle">Live Webinar</h3>
-                            <h3 class="popular__subtitle">Date: 30 April 2023</h3>
-                            <img src="assets/img/web-2.png" alt="" class="popular__img" style="width: 120px;">
-                            <h3 class="popular__price" style="color: #000000;">SPEAKER <br><b>Rakesha H G</b><br> Senior Inside Sales Manager</h3>
-                        </article>
-
-                        <article class="popular__card swiper-slide" style="background-color: #ffffff;">
-                            <h1 class="popular__title" style="color: #000000;">How To Make Your Career Stand Out</h1>
-                            <h3 class="popular__subtitle">Live Webinar</h3>
-                            <h3 class="popular__subtitle">Date: 23 April 2023</h3>
-                            <img src="assets/img/web-1.png" alt="" class="popular__img" style="width: 120px;">
-                            <h3 class="popular__price" style="color: #000000;">SPEAKER <br><b>Rakesha H G</b><br> Senior Inside Sales Manager</h3>
-                        </article>
-
-
-                        
-
-
-
-                    </div>
-
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-
-
-
-
-
-
-
-
-
-            <!--==================== OFFER ====================-->
-            <section class="offer section">
-                <div class="offer__container container grid">
-                    <img src="assets/img/bg-4.png" alt="" class="offer__bg">
-
-                    <div class="offer__data">
-                        <h2 class="section__title offer__title">
-                            Why we ?
-                        </h2>
-                        <p class="offer__description">
-                            We believe that everyone deserves a fulfilling career that they love. We 
-                            understand that it can be challenging to navigate the job market and find the 
-                            right career path. That's where we come in. Our team of experts is here to help 
-                            guide you through the process of finding your ideal career. 
-                            And we will provide the best qualified career assistance programme to reach your 
-                            career goals and dreams.                            
-                        </p>
-                    </div>
-
-                </div>
-            </section>
-
-
-
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer section" style="background-color: rgb(0, 0, 0); border-radius:20px 20px 0 0; color: #fff; ">
+     <!--==================== FOOTER ====================-->
+     <footer class="footer section" style="background-color: rgb(0, 0, 0); border-radius:20px 20px 0 0; color: #fff; ">
             
         <div class="shape shape__big"></div>
         <div class="shape shape__small"></div>                

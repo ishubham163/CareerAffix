@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>CareerAffix/Registration_Page</title>
+    </head>
+    <body>
+
+
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo.png" alt="logo image">Career<span style="color:#1980e6 ; margin-left: -5px;">Affix</span> 
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__items">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+
+                        <li class="nav__items">
+                            <a href="about.html" class="nav__link ">About Us</a>
+                        </li>
+
+                        <li class="nav__items">
+                            <a href="courses.html" class="nav__link">Course</a>
+                        </li>
+
+                        <li class="nav__items">
+                            <a href="event.html" class="nav__link ">Event</a>
+                        </li>
+
+                        <li class="nav__items">
+                            <a href="registration.html" class="nav__link active-link">Register</a>
+                        </li>
+
+                        <li class="nav__items">
+                            <a href="#" class="nav__link">Login</a>
+                        </li>
+                    </ul>
+
+                    <!--Close Button-->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+
+                </div>
+
+                <!--Toggle Button-->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-apps-2-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main" style="background-color: #1980e675;">
+
+            <!--==================== PRICE ====================-->
+
+
+            <section class="about section" style="margin-top: 50px;">
+                <div class="about__container container grid">
+                    <div class="home__data">
+                        <div class="celebrate__data">
+                            <h2 class="section__title" style="color: #1980e6;">
+                                CareerAffix
+                            </h2>
+                            <h2 class="section__title" style="font-size: 30px; color:#fff">
+                                Our Courses
+                            </h2>
+                            <p>
+                                Web Development  &nbsp;&nbsp;|&nbsp; &nbsp; App Development  &nbsp;&nbsp;| &nbsp;&nbsp; 
+                                Data Science&nbsp;&nbsp;  |&nbsp;&nbsp;  AI & ML&nbsp;&nbsp;  |&nbsp;&nbsp;  Degital Marketing &nbsp;&nbsp; |  
+                                &nbsp;&nbsp; Sales and Marketing &nbsp;&nbsp; | &nbsp;&nbsp; Finance  &nbsp;&nbsp;|&nbsp;&nbsp;  HR&nbsp;&nbsp;
+                                | &nbsp;&nbsp; Social Media Mastery &nbsp;&nbsp; |&nbsp;&nbsp;  Stock Marketing &nbsp;&nbsp; | &nbsp;&nbsp; 
+                                Public Speaking
+                                
+                            </p>
+                            <br>
+                            <h4>Duration: 3 Month</h4>
+                            <br>
+                            <h4>Price: Rs 5,999 (50% OFFER)</h4>
+                            <h4>Offer Price: Rs 2,999 + 18% GST</h4>
+                            <h4>Totla Price: Rs 3,540 (Limited Time OFFER)</h4>
+                            <br>
+                            <br>
+                            <p>You will get a Course Complition Certificate. After successful completing the course.</p>
+                            <br><br>
+                            <p>&#9673; Affiliate marketing opportunity (free and optional)</p><br>
+                            <p>&#9673; There is no limitation to earning</p><br>
+                            <p>&#9673; Your earnings will be distributed on a weekly basis.</p><br>
+                            <p>&#9673; You will get free training to develop your business.</p><br>
+                            <p>&#9673; All of our users are eligible for this opportunity.</p><br>
+
+    
+                        </div>
+                    </div>
+
+                    <div class="about__data">
+                        
+
+                        <div class="reg-1">
+                            <div class="container-reg-1">
+                                <div class="title">Registration Form</div>
+                                <form action="pay.php" method="POST" >
+                                    
+                                    <div class="user-details">
+                                        Price : Rs 3,540 <input type="hidden" name="price" value="3540">
+
+                                        <div class="input-box">
+                                            <span class="details">Course</span>
+                                            <select id="Course" name="Course" required>
+                                                <option value="" disabled selected hidden>Choose a Course</option>
+                                                <option value="Web Developer">Web Developer</option>
+                                                <option value="Software Devlopment">Software Devlopment</option>
+                                                <option value="Data Science">Data Science</option>
+                                                <option value="AI & ML">AI & ML</option>
+                                                <option value="Digital Marketing">Digital Marketing</option>
+                                                <option value="Sales & Marketing">Sales & Marketing</option>
+                                                <option value="Finance">Finance</option>
+                                                <option value="Human Resources">Human Resources</option>
+                                                <option value="Social Media Mastri">Social Media Mastri</option>
+                                                <option value="Stock Marketing">Stock Marketing</option>
+                                                <option value="Public Speaking">Public Speaking</option>
+                                            </select>
+                                        </div>
+
+
+                                        <div class="input-box">
+                                            <span class="details">Name</span>
+                                            <input type="text" name="Name" placeholder="Enter your full name" required>
+                                        </div>
+
+                                        <div class="input-box">
+                                            <span class="details">Email id</span>
+                                            <input type="text" name="Email" placeholder="youremail@gmail.com" required>
+                                        </div>
+                            
+                                        <div class="input-box">
+                                            <span class="details">Contact Number</span>
+                                            <input type="text" name="Contact" placeholder="Enter your Contact Number" required>
+                                        </div>
+            
+                                        <div class="input-box">
+                                            <span class="details">State</span>
+                                            <input type="text" name="State" placeholder="Enter your State" required>
+                                        </div>
+
+                                        <div class="input-box">
+                                            <span class="details">City</span>
+                                            <input type="text" name="City" placeholder="Enter your City" required>
+                                        </div>
+
+                                        <div class="input-box">
+                                            <span class="details">Enter Unique Code</span>
+                                            <input type="text" name="Unique" placeholder="Enter your Unique Code">
+                                        </div>
+                                        <label>
+                                            <input type="checkbox" required>
+                                            I agree to the terms and condition
+                                        </label>
+                            
+                                        
+                                    </div>
+                            
+                            
+                                    <div  class="button-reg-1">
+                                            <input  type="submit" class="submit" value="Proceed To Pay" name="submit"> 
+                                    </div>
+                                    
+                                    
+                            
+                                </form>
+                                
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+
+            <section class="celebrate section" id="celebrate">
+                <div class="celebrate__container container grid">
+                    <div class="celebrate__data">
+                        <h2 class="section__title">
+                            Contact Us
+                        </h2>
+
+                        <p class="celebrate__description">
+                            
+                            <div>
+                                Email Us On
+                                
+                                <p><i class="ri-mail-fill"></i> &nbsp;
+                                    <a href="mailto:support@careeraffix.in" style="color: #000;">support@careeraffix.in</a></p>
+                              </div><br><br>
+                              Call Us On
+                
+                              <div>
+                                
+                                <p><i class="ri-phone-fill"></i> &nbsp;
+                                    <a href="tel:+91 9590539925" style="color:#000">+91 95905 39925</a></p>
+                              </div> <br><br>
+                              Address
+
+                              <div>
+                                
+                                <p><i class="ri-home-fill"></i> &nbsp;
+                                    ITI Layout Main Road, Bengaluru, Karnataka - 560068</p>
+                              </div>
+                        </p>
+
+                    </div>
+                    <img src="assets/img/contact.png" alt="celebrate image" class="celebrate__img">
+                    
+                </div>
+            </section>
+
+        </main>
+
+
+
+
+
+
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section" style="background-color: rgb(0, 0, 0); border-radius:20px 20px 0 0; color: #fff; ">
+            
+        <div class="shape shape__big"></div>
+        <div class="shape shape__small"></div>                
+        
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <img src="./assets/img/logo.png" alt="" style="width: 100px;">
+                     CareerAffix
+                </a>
+                <p class="footer__description">
+                    CareerAffix is building the foundation for all <br>
+                    learners, and we are providing the platform <br>
+                    where everyone is welcome to enhance their <br>
+                    skills, and we train, educate, and give them <br>
+                    an opportunity to make money online.
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Company
+                </h3>
+                <ul class="footer__link">
+                    <li>
+                        <a href="about.html" class="footer__link">About</a>
+                    </li>
+
+                    <li>
+                        <a href="event.html" class="footer__link">Event</a>
+                    </li>
+
+                    <li>
+                        <a href="registration.html" class="footer__link">Register</a>
+                    </li>
+
+                    <li>
+                        <a href="event_form.html" class="footer__link">Webinar Registration</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Information
+                </h3>
+                <ul class="footer__link">
+
+                    <li>
+                        <a href="registration.html" class="footer__link">Payment</a>
+                    </li>
+
+                    <li>
+                        <a href="courses.html" class="footer__link">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="footer__link">Contact us</a>
+                    </li>
+                    <br>
+
+                    <li>
+                        <a href="terms&condition.html" class="footer__link">Terms & Condition</a>
+                    </li>
+
+                    <li>
+                        <a href="privecy.html" class="footer__link">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="refund.html" class="footer__link">Refund Policy</a>
+                    </li>
+
+                    
+
+                   
+
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Follow us
+                </h3>
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/profile.php?id=100092272236797&mibextid=ZbWKwL" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://instagram.com/careeraffix?igshid=YmMyMTA2M2Y=" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://youtube.com/@CareerAffix" target="_blank" class="footer__social-link">
+                        <i class="ri-youtube-line"></i>
+                    </a>
+                </ul>
+            </div>
+
+        </div>
+        <span class="footer__copy">
+            &#169; CareerAffix. All rigths reserved 2023
+        </span>
+    </footer>
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--=============== RELLAX JS ===============-->
+        <script src="assets/js/rellax.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== GSAP ===============-->
+        <script src="assets/js/gsap.min.js"></script>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
